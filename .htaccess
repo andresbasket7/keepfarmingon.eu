@@ -1,0 +1,6 @@
+<Files index.htm>
+AddType application/x-httpd-php .htm
+</Files>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
