@@ -1,5 +1,5 @@
 <Files index.htm>
-AddType application/x-httpd-php .htm
+AddType text/html .htm
 </Files>
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\.
